@@ -1,0 +1,21 @@
+﻿<Window x:Class="practic7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="281">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="createchat" Grid.Row="0" Content="Создать чат" Background="OrangeRed" Click="createchat_Click"/>
+        <Button x:Name="addchat" Grid.Row="1" Content="Присоденится к чату" Background="OrangeRed" Click="addchat_Click"/>
+        <TextBox x:Name="pepolename" Background="Orange" Grid.Row="2"/>
+        <TextBox x:Name="idchat" Background="Orange" Grid.Row="3"/>
+    </Grid>
+</Window>
